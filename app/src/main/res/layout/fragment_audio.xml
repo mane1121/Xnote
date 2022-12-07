@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".fragmentos.Audio">
+
+    <Button
+        android:id="@+id/btnStart"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="47dp"
+        android:layout_marginTop="200dp"
+        android:background="@android:drawable/presence_audio_online"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/btnStop"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="68dp"
+        android:background="@android:drawable/stat_notify_call_mute"
+        android:contentDescription="@string/audio_onda"
+        app:iconGravity="textEnd" />
+
+    <Button
+        android:id="@+id/btnGuardar"
+        android:layout_width="180dp"
+        android:layout_height="48dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="90dp"
+        android:layout_marginEnd="110dp"
+        android:layout_marginBottom="42dp"
+        android:text="@string/guardar" />
+
+    <EditText
+        android:id="@+id/txtDescripcionNota"
+        android:layout_width="355dp"
+        android:layout_height="100dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="145dp"
+        android:ems="10"
+        android:hint="@string/descripcion"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName" />
+</RelativeLayout>
